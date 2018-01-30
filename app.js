@@ -1,6 +1,8 @@
 //app.js
 App({
   onLaunch: function (options) {
+    wx.mogoAjax = require('./utils/ajax.js');
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

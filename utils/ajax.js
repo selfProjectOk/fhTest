@@ -1,13 +1,14 @@
 const {Base64} = require('./tools/base64.js');
 const md5 = require('./tools/md5.min.js');
+const config = require('./config.js')
 
 
-const baseUrl = 'https://plusapi.mogoroom.com/mogoroom-bd';
+const baseUrl = config.baseUrl;
 
-// 版本信息，在app.js中编辑
-var appInstance = getApp();
-let AppVersion = appInstance.globalData.AppVersion;
-let Channel = appInstance.globalData.Channel;
+// 版本信息
+console.log(config);
+let AppVersion = config.AppVersion;
+let Channel = config.Channel;
 
 // 系统信息
 var res = {};

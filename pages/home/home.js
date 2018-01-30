@@ -1,6 +1,4 @@
 // pages/home.js
-const ajax = require('../../utils/ajax.js');
-
 Page({
   data: {
   },
@@ -9,10 +7,10 @@ Page({
   onShow: function () {
   },
   onReady: function () {
-    ajax.post({
+    wx.mogoAjax.post({
       url: '/login/getAuthCode',
       data: {
-        jobNum: '91510'
+        jobNum: '90178'
       },
       success: (res) => {
         console.log(res);
