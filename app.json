@@ -1,12 +1,18 @@
 {
-  "pages":[
+  "pages": [
+    "pages/home/home",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/chooseCity/chooseCity"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "蘑菇租房",
+    "navigationBarBackgroundColor": "#ff5050"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }

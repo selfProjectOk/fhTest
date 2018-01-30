@@ -1,0 +1,18 @@
+<!--pages/home.wxml-->
+<view class="home">
+  <view class="topDiv">
+    <view class="topBar">
+      <text bindtap='goChooseCity'>{{"上海"}}</text>
+      <view class='searchDiv'></view>
+    </view>
+  </view>
+  <view class="housesDiv">
+    <scroll-view scroll-x="{{true}}">
+      <view style="height: 500rpx">
+        <text>333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="housesDiv">3</view>
+  <view class="housesDiv">4</view>
+</view>
